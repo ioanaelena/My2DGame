@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D GAME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="start-scene">
+    <h1>Welcome to My 2D Game</h1>
+    <button id="start-button">Start Game</button>
+</div>
+
+<div id="game-scene" style="display: none;">
+    <canvas id="canvas1"></canvas>
+
+    <!-- characters -->
+    <img id="player1" src="assets/calutMare.png" alt="player" width="4680" height="380">
+    <img id="angler1" src="assets/angler1.png" alt="enemy1" width="8892" height="507">
+    <img id="angler2" src="assets/angler2.png" alt="enemy2" width="8307" height="337">
+    <img id="lucky" src="assets/lucky.png" alt="lucky fish" width="3861" height="190">
+
+    <!-- props -->
+    <img id="projectile" src="assets/projectile.png" alt="projectile" width="28" height="10">
+    <img id="gears" src="assets/gears.png" alt="gears" width="150" height="150">
+
+    <!-- environment -->
+    <img id="layer2" src="assets/naruto2.jpg" alt="Descriere imagine 2" width="1768" height="500">
+    <img id="layer3" src="assets/naruto3.png" alt="Descriere imagine 3" width="1768" height="500">
+    <img id="layer4" src="assets/naruto4.jpg" alt="Descriere imagine 4" width="1768" height="500">
+</div>
+
+<div id="game-over-screen" class="hidden">
+    <button id="restart-button">Restart Game</button>
+</div>
+
+<script src="window.js"></script>
+</body>
+</html>
+
